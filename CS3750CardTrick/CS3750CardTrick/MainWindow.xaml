@@ -8,6 +8,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Label x:Name="labelTitle" Content="Hello! 21 Card Game" HorizontalAlignment="Left" Margin="174,33,0,0" VerticalAlignment="Top" Height="36" Width="142"/>
+        <Button x:Name="btnTestButton" Content="TheTestButton" HorizontalAlignment="Left" Margin="80,165,0,0" VerticalAlignment="Top" Width="97" Click="btnTestButton_Click"/>
 
     </Grid>
 </Window>

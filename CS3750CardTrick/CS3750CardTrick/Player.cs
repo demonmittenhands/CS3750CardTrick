@@ -8,7 +8,7 @@ namespace CS3750CardTrick
 {
     class Player
     {
-        private bool hasPickCard;
+        public bool hasPickCard { get; set; }
 
         private int IndicateColumn()
         {
