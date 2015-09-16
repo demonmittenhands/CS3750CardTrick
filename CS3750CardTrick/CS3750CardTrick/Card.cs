@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS3750CardTrick
 {
-    class Board
+    class Card
     {
-        public void addToColumn(int columnId, Card card)
-        {
-
-        }
     }
 }
