@@ -8,5 +8,6 @@ namespace CS3750CardTrick
 {
     class Card
     {
+        private int suit;
     }
 }
