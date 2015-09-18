@@ -1,9 +1,82 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS3750CardTrick", "CS3750CardTrick\CS3750CardTrick.csproj", "{C9DC0F88-BB96-4E98-BD93-13123FB7E202}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F24B953-5C16-43B7-9021-B8ADE78712AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeckImages", "DeckImages", "{50A898B6-9A2F-42EE-8A9B-6D246EC96EA3}"
+	ProjectSection(SolutionItems) = preProject
+		CS3750CardTrick\Deck\10_of_clubs.png = CS3750CardTrick\Deck\10_of_clubs.png
+		CS3750CardTrick\Deck\10_of_diamonds.png = CS3750CardTrick\Deck\10_of_diamonds.png
+		CS3750CardTrick\Deck\10_of_hearts.png = CS3750CardTrick\Deck\10_of_hearts.png
+		CS3750CardTrick\Deck\10_of_spades.png = CS3750CardTrick\Deck\10_of_spades.png
+		CS3750CardTrick\Deck\2_of_clubs.png = CS3750CardTrick\Deck\2_of_clubs.png
+		CS3750CardTrick\Deck\2_of_diamonds.png = CS3750CardTrick\Deck\2_of_diamonds.png
+		CS3750CardTrick\Deck\2_of_hearts.png = CS3750CardTrick\Deck\2_of_hearts.png
+		CS3750CardTrick\Deck\2_of_spades.png = CS3750CardTrick\Deck\2_of_spades.png
+		CS3750CardTrick\Deck\3_of_clubs.png = CS3750CardTrick\Deck\3_of_clubs.png
+		CS3750CardTrick\Deck\3_of_diamonds.png = CS3750CardTrick\Deck\3_of_diamonds.png
+		CS3750CardTrick\Deck\3_of_hearts.png = CS3750CardTrick\Deck\3_of_hearts.png
+		CS3750CardTrick\Deck\3_of_spades.png = CS3750CardTrick\Deck\3_of_spades.png
+		CS3750CardTrick\Deck\4_of_clubs.png = CS3750CardTrick\Deck\4_of_clubs.png
+		CS3750CardTrick\Deck\4_of_diamonds.png = CS3750CardTrick\Deck\4_of_diamonds.png
+		CS3750CardTrick\Deck\4_of_hearts.png = CS3750CardTrick\Deck\4_of_hearts.png
+		CS3750CardTrick\Deck\4_of_spades.png = CS3750CardTrick\Deck\4_of_spades.png
+		CS3750CardTrick\Deck\5_of_clubs.png = CS3750CardTrick\Deck\5_of_clubs.png
+		CS3750CardTrick\Deck\5_of_diamonds.png = CS3750CardTrick\Deck\5_of_diamonds.png
+		CS3750CardTrick\Deck\5_of_hearts.png = CS3750CardTrick\Deck\5_of_hearts.png
+		CS3750CardTrick\Deck\5_of_spades.png = CS3750CardTrick\Deck\5_of_spades.png
+		CS3750CardTrick\Deck\6_of_clubs.png = CS3750CardTrick\Deck\6_of_clubs.png
+		CS3750CardTrick\Deck\6_of_diamonds.png = CS3750CardTrick\Deck\6_of_diamonds.png
+		CS3750CardTrick\Deck\6_of_hearts.png = CS3750CardTrick\Deck\6_of_hearts.png
+		CS3750CardTrick\Deck\6_of_spades.png = CS3750CardTrick\Deck\6_of_spades.png
+		CS3750CardTrick\Deck\7_of_clubs.png = CS3750CardTrick\Deck\7_of_clubs.png
+		CS3750CardTrick\Deck\7_of_diamonds.png = CS3750CardTrick\Deck\7_of_diamonds.png
+		CS3750CardTrick\Deck\7_of_hearts.png = CS3750CardTrick\Deck\7_of_hearts.png
+		CS3750CardTrick\Deck\7_of_spades.png = CS3750CardTrick\Deck\7_of_spades.png
+		CS3750CardTrick\Deck\8_of_clubs.png = CS3750CardTrick\Deck\8_of_clubs.png
+		CS3750CardTrick\Deck\8_of_diamonds.png = CS3750CardTrick\Deck\8_of_diamonds.png
+		CS3750CardTrick\Deck\8_of_hearts.png = CS3750CardTrick\Deck\8_of_hearts.png
+		CS3750CardTrick\Deck\8_of_spades.png = CS3750CardTrick\Deck\8_of_spades.png
+		CS3750CardTrick\Deck\9_of_clubs.png = CS3750CardTrick\Deck\9_of_clubs.png
+		CS3750CardTrick\Deck\9_of_diamonds.png = CS3750CardTrick\Deck\9_of_diamonds.png
+		CS3750CardTrick\Deck\9_of_hearts.png = CS3750CardTrick\Deck\9_of_hearts.png
+		CS3750CardTrick\Deck\9_of_spades.png = CS3750CardTrick\Deck\9_of_spades.png
+		CS3750CardTrick\Deck\ace_of_clubs.png = CS3750CardTrick\Deck\ace_of_clubs.png
+		CS3750CardTrick\Deck\ace_of_diamonds.png = CS3750CardTrick\Deck\ace_of_diamonds.png
+		CS3750CardTrick\Deck\ace_of_hearts.png = CS3750CardTrick\Deck\ace_of_hearts.png
+		CS3750CardTrick\Deck\ace_of_spades.png = CS3750CardTrick\Deck\ace_of_spades.png
+		CS3750CardTrick\Deck\ace_of_spades2.png = CS3750CardTrick\Deck\ace_of_spades2.png
+		CS3750CardTrick\Deck\black_joker.png = CS3750CardTrick\Deck\black_joker.png
+		CS3750CardTrick\Deck\jack_of_clubs.png = CS3750CardTrick\Deck\jack_of_clubs.png
+		CS3750CardTrick\Deck\jack_of_clubs2.png = CS3750CardTrick\Deck\jack_of_clubs2.png
+		CS3750CardTrick\Deck\jack_of_diamonds.png = CS3750CardTrick\Deck\jack_of_diamonds.png
+		CS3750CardTrick\Deck\jack_of_diamonds2.png = CS3750CardTrick\Deck\jack_of_diamonds2.png
+		CS3750CardTrick\Deck\jack_of_hearts.png = CS3750CardTrick\Deck\jack_of_hearts.png
+		CS3750CardTrick\Deck\jack_of_hearts2.png = CS3750CardTrick\Deck\jack_of_hearts2.png
+		CS3750CardTrick\Deck\jack_of_spades.png = CS3750CardTrick\Deck\jack_of_spades.png
+		CS3750CardTrick\Deck\jack_of_spades2.png = CS3750CardTrick\Deck\jack_of_spades2.png
+		CS3750CardTrick\Deck\king_of_clubs.png = CS3750CardTrick\Deck\king_of_clubs.png
+		CS3750CardTrick\Deck\king_of_clubs2.png = CS3750CardTrick\Deck\king_of_clubs2.png
+		CS3750CardTrick\Deck\king_of_diamonds.png = CS3750CardTrick\Deck\king_of_diamonds.png
+		CS3750CardTrick\Deck\king_of_diamonds2.png = CS3750CardTrick\Deck\king_of_diamonds2.png
+		CS3750CardTrick\Deck\king_of_hearts.png = CS3750CardTrick\Deck\king_of_hearts.png
+		CS3750CardTrick\Deck\king_of_hearts2.png = CS3750CardTrick\Deck\king_of_hearts2.png
+		CS3750CardTrick\Deck\king_of_spades.png = CS3750CardTrick\Deck\king_of_spades.png
+		CS3750CardTrick\Deck\king_of_spades2.png = CS3750CardTrick\Deck\king_of_spades2.png
+		CS3750CardTrick\Deck\queen_of_clubs.png = CS3750CardTrick\Deck\queen_of_clubs.png
+		CS3750CardTrick\Deck\queen_of_clubs2.png = CS3750CardTrick\Deck\queen_of_clubs2.png
+		CS3750CardTrick\Deck\queen_of_diamonds.png = CS3750CardTrick\Deck\queen_of_diamonds.png
+		CS3750CardTrick\Deck\queen_of_diamonds2.png = CS3750CardTrick\Deck\queen_of_diamonds2.png
+		CS3750CardTrick\Deck\queen_of_hearts.png = CS3750CardTrick\Deck\queen_of_hearts.png
+		CS3750CardTrick\Deck\queen_of_hearts2.png = CS3750CardTrick\Deck\queen_of_hearts2.png
+		CS3750CardTrick\Deck\queen_of_spades.png = CS3750CardTrick\Deck\queen_of_spades.png
+		CS3750CardTrick\Deck\queen_of_spades2.png = CS3750CardTrick\Deck\queen_of_spades2.png
+		CS3750CardTrick\Deck\red_joker.png = CS3750CardTrick\Deck\red_joker.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

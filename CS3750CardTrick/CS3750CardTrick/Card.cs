@@ -8,7 +8,18 @@ namespace CS3750CardTrick
 {
     class Card
     {
-        private int suit;
-        private int BobTester;
+        private string face;//path to image
+        //private int BobTester;
+
+        public Card(String nFace)
+        {
+            this.face = nFace;
+        }
+
+        public String getFace()
+        {
+            return face;
+        }
+
     }
 }
