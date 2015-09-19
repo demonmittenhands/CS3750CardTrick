@@ -35,6 +35,7 @@ namespace CS3750CardTrick
             Player thePlayer = new Player();
             thePlayer.hasPickCard = true;
             btnTestButton.Content = thePlayer.hasPickCard;
+            
         }
     }
 }
