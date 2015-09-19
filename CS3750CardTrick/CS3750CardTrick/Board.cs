@@ -8,9 +8,9 @@ namespace CS3750CardTrick
 {
     class Board
     {
-        public void addToColumn(int columnId, Card card)
+        public void addToColumn(ref List<Card> columnId, Card card)
         {
-
+            columnId.Add(card);
         }
     }
 }
