@@ -25,17 +25,5 @@ namespace CS3750CardTrick
             InitializeComponent();
         }
 
-        /// <summary>
-        /// This is just a testing button  delete it later.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnTestButton_Click(object sender, RoutedEventArgs e)
-        {
-            Player thePlayer = new Player();
-            thePlayer.hasPickCard = true;
-            btnTestButton.Content = thePlayer.hasPickCard;
-            
-        }
     }
 }

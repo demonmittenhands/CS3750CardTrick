@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CS3750CardTrick"
         mc:Ignorable="d"
-        Title="MainWindow" Height="377.305" Width="577.128" Background="#FF4AC53E">
+        Title="MainWindow" Background="#FF4AC53E" Height="587.801" Width="556.773">
     <Grid>
         <Label x:Name="labelTitle" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="36" Width="569" Content="21 Card Game" HorizontalContentAlignment="Center" FontSize="20"/>
-        <Button x:Name="btnTestButton" Content="TheTestButton" HorizontalAlignment="Left" Margin="-204,138,0,0" VerticalAlignment="Top" Width="97" Click="btnTestButton_Click"/>
-        <Button x:Name="btnColumn1" Content="Column 1" HorizontalAlignment="Left" Margin="95,266,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btnColumn2" Content="Column 2" HorizontalAlignment="Left" Margin="229,266,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btnColumn3" Content="Column 3" HorizontalAlignment="Left" Margin="361,266,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnColumn1" Content="Column 1" HorizontalAlignment="Left" Margin="95,491,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnColumn2" Content="Column 2" HorizontalAlignment="Left" Margin="238,491,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnColumn3" Content="Column 3" HorizontalAlignment="Left" Margin="377,491,0,0" VerticalAlignment="Top" Width="75"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="95,69,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

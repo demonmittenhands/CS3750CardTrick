@@ -8,11 +8,13 @@ namespace CS3750CardTrick
 {
     class Column
     {
-        int id;
+        public int id { get; set; }
 
-        public static void addCard(Card card)
+        private  List<Card> cardList = new List<Card>();
+
+        public void addCard(Card card)
         {
-
+            cardList.Add(card);
         }
     }
 }
