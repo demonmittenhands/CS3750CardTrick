@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace CS3750CardTrick
 {
-    class Player
+    class Column
     {
+        int id;
 
-
-        public int IndicateColumn()
+        public static void addCard(Card card)
         {
-            // Onclick to set column and return the column number.
-            return 0;
+
         }
-
-
     }
 }

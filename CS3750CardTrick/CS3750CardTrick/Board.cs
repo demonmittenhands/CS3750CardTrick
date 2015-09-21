@@ -10,7 +10,18 @@ namespace CS3750CardTrick
     {
         public void addToColumn(int columnId, Card card)
         {
-
+            switch (columnId)
+            {
+                case 0:
+                    Column.addCard(card);
+                    break;
+                case 1:
+                    Column.addCard(card);
+                    break;
+                case 2:
+                    Column.addCard(card);
+                    break;
+            }
         }
     }
 }
