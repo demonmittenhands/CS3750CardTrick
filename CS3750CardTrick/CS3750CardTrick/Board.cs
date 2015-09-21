@@ -8,9 +8,20 @@ namespace CS3750CardTrick
 {
     class Board
     {
-        public void addToColumn(ref List<Card> columnId, Card card)
+        public void addToColumn(int columnId, Card card)
         {
-            columnId.Add(card);
+            switch (columnId)
+            {
+                case 0:
+                    Column.addCard(card);
+                    break;
+                case 1:
+                    Column.addCard(card);
+                    break;
+                case 2:
+                    Column.addCard(card);
+                    break;
+            }
         }
     }
 }
