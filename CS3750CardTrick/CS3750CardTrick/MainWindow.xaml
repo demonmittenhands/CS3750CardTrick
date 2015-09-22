@@ -5,37 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CS3750CardTrick"
         mc:Ignorable="d"
-        Title="MainWindow" Background="#FF4AC53E" Height="750" Width="600">
+        Title="MainWindow" Background="#FF4AC53E" Height="638.91" Width="687.903">
     <Grid>
-        <Label x:Name="lblTitle" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="36" Width="549" Content="21 Card Game" HorizontalContentAlignment="Center" FontSize="22"/>
-        <Button x:Name="btnColumn1" Content="Column 1" HorizontalAlignment="Left" Margin="95,491,0,0" VerticalAlignment="Top" Width="75" Click="btnColumn1_Click" Visibility="Hidden"/>
-        <Button x:Name="btnColumn2" Content="Column 2" HorizontalAlignment="Left" Margin="238,491,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
-        <Button x:Name="btnColumn3" Content="Column 3" HorizontalAlignment="Left" Margin="377,491,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
-        <Label x:Name="lblTest" Content="Label" HorizontalAlignment="Left" Margin="214,234,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnStartGame" Content="Start Game" HorizontalAlignment="Left" Margin="238,183,0,0" VerticalAlignment="Top" Width="75" Click="btnStartGame_Click"/>
-        <Label x:Name="lblGameInfo" Content="Pick a card and select the column that holds that card." HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" FontSize="20" Width="529" HorizontalContentAlignment="Center" Visibility="Hidden"/>
+        <Label x:Name="lblTitle" Margin="0,10,0,0" VerticalAlignment="Top" Height="36" Content="21 Card Game" HorizontalContentAlignment="Center" FontSize="22"/>
+        <Button x:Name="btnColumn1" Content="Column 1" HorizontalAlignment="Left" Margin="152,495,0,0" VerticalAlignment="Top" Width="75" Click="btnColumn1_Click"/>
+        <Button x:Name="btnColumn2" Content="Column 2" HorizontalAlignment="Left" Margin="313,495,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnColumn3" Content="Column 3" HorizontalAlignment="Left" Margin="477,495,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.449,0.734"/>
+        <Button x:Name="btnStartGame" Content="Start Game" HorizontalAlignment="Left" Margin="313,76,0,0" VerticalAlignment="Top" Width="75" Click="btnStartGame_Click" RenderTransformOrigin="1.171,-1.694"/>
+        <Label x:Name="lblGameInfo" Content="Pick a card and select the column that holds that card." HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" FontSize="20" Width="670" HorizontalContentAlignment="Center"/>
 
-        <Image x:Name="img1" HorizontalAlignment="Left" Height="100"   Margin="100,0,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="img2" HorizontalAlignment="Left" Height="100"   Margin="200,0,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img3" HorizontalAlignment="Left" Height="100"   Margin="300,0,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img4" HorizontalAlignment="Left" Height="100"   Margin="100,100,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="img5" HorizontalAlignment="Left" Height="100"   Margin="200,100,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img6" HorizontalAlignment="Left" Height="100"   Margin="300,100,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img7"  HorizontalAlignment="Left" Height="100"  Margin="100,200,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="img8"  HorizontalAlignment="Left" Height="100"  Margin="200,200,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img9"  HorizontalAlignment="Left" Height="100"  Margin="300,200,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img10" HorizontalAlignment="Left" Height="100"  Margin="100,300,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="img11" HorizontalAlignment="Left" Height="100"  Margin="200,300,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img12" HorizontalAlignment="Left" Height="100"  Margin="300,300,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img13" HorizontalAlignment="Left" Height="100"  Margin="100,400,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="img14" HorizontalAlignment="Left" Height="100"  Margin="200,400,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img15" HorizontalAlignment="Left" Height="100"  Margin="300,400,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img16" HorizontalAlignment="Left" Height="100"  Margin="100,500,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="img17" HorizontalAlignment="Left" Height="100"  Margin="200,500,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img18" HorizontalAlignment="Left" Height="100"  Margin="300,500,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img19"  HorizontalAlignment="Left" Height="100" Margin="100,600,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="img20"  HorizontalAlignment="Left" Height="100" Margin="200,600,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
-        <Image x:Name="img21"  HorizontalAlignment="Left" Height="100" Margin="300,600,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488"/>
+        <Image Source="Deck/4_of_spades.png" x:Name="img1" HorizontalAlignment="Left" Height="100"   Margin="152,103,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="img2" HorizontalAlignment="Left" Height="100"   Margin="313,103,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img3" HorizontalAlignment="Left" Height="100"   Margin="477,103,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img4" HorizontalAlignment="Left" Height="100"   Margin="152,146,0,0" VerticalAlignment="Top" Width="100" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img5" HorizontalAlignment="Left" Height="100"   Margin="313,146,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img6" HorizontalAlignment="Left" Height="100"   Margin="477,146,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img7"  HorizontalAlignment="Left" Height="100"  Margin="152,187,0,0" VerticalAlignment="Top" Width="100" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img8"  HorizontalAlignment="Left" Height="100"  Margin="313,187,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img9"  HorizontalAlignment="Left" Height="100"  Margin="477,187,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img10" HorizontalAlignment="Left" Height="100"  Margin="152,231,0,0" VerticalAlignment="Top" Width="100" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img11" HorizontalAlignment="Left" Height="100"  Margin="313,231,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img12" HorizontalAlignment="Left" Height="100"  Margin="477,231,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img13" HorizontalAlignment="Left" Height="100"  Margin="152,271,0,0" VerticalAlignment="Top" Width="100" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img14" HorizontalAlignment="Left" Height="100"  Margin="313,271,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img15" HorizontalAlignment="Left" Height="100"  Margin="477,271,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img16" HorizontalAlignment="Left" Height="100"  Margin="152,309,0,0" VerticalAlignment="Top" Width="100" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img17" HorizontalAlignment="Left" Height="100"  Margin="313,309,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img18" HorizontalAlignment="Left" Height="100"  Margin="477,309,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img19"  HorizontalAlignment="Left" Height="100" Margin="152,347,0,0" VerticalAlignment="Top" Width="100" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img20"  HorizontalAlignment="Left" Height="100" Margin="313,347,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="img21"  HorizontalAlignment="Left" Height="100" Margin="477,347,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
 
     </Grid>
 </Window>

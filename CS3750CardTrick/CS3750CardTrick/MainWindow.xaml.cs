@@ -26,12 +26,21 @@ namespace CS3750CardTrick
         public MainWindow()
         {       
             InitializeComponent();
+
+            btnColumn1.Visibility = Visibility.Hidden;
+            btnColumn2.Visibility = Visibility.Hidden;
+            btnColumn3.Visibility = Visibility.Hidden;
+
+            lblGameInfo.Visibility = Visibility.Hidden;
+
+
         }
+
+        
 
         private void btnColumn1_Click(object sender, RoutedEventArgs e)
         {
             
-            lblTest.Content = "test";
             
             // this will work
             //BitmapImage image = new BitmapImage(new Uri("C:\\Users\\Erzee\\Source\\Repos\\CS3750CardTrick\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_clubs.png", UriKind.Absolute));
@@ -60,6 +69,7 @@ namespace CS3750CardTrick
 
             //fill the card images.
             Dealer dealer = new Dealer();
+
             dealer.test();
             
 

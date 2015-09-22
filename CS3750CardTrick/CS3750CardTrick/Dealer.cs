@@ -41,7 +41,6 @@ namespace CS3750CardTrick
             ImageSourceConverter imgs = new ImageSourceConverter();
             //window.imgTest1.SetValue(Image.SourceProperty, imgs.ConvertFromString(@"Deck/2_of_clubs.png"));
             
-            window.lblTest.Content = "balogna";
 
             //Image thisimg = new Image();
             //thisimg.Source = imgs.ConvertFromString(@"Deck/3_of_hearts.png") as ImageSource;
