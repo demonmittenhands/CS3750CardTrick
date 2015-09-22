@@ -8,7 +8,7 @@ namespace CS3750CardTrick
 {
     class Column
     {
-        int id;
+        private int id;
 
         public static void addCard(Card card)
         {
