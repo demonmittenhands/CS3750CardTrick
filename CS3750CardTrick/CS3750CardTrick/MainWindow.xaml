@@ -12,7 +12,7 @@
         <Button x:Name="btnColumn2" Content="Column 2" HorizontalAlignment="Left" Margin="238,491,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
         <Button x:Name="btnColumn3" Content="Column 3" HorizontalAlignment="Left" Margin="377,491,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
         <Label x:Name="lblTest" Content="Label" HorizontalAlignment="Left" Margin="214,234,0,0" VerticalAlignment="Top"/>
-        <Image x:Name="imgTest" Loaded="imgTest_Loaded" HorizontalAlignment="Left" Height="175" Margin="352,135,0,0" VerticalAlignment="Top" Width="140"/>
+        <Image x:Name="imgTest" HorizontalAlignment="Left" Height="175" Margin="352,135,0,0" VerticalAlignment="Top" Width="140"/>
         <Button x:Name="btnStartGame" Content="Start Game" HorizontalAlignment="Left" Margin="238,183,0,0" VerticalAlignment="Top" Width="75" Click="btnStartGame_Click"/>
         <Label x:Name="lblGameInfo" Content="Pick a card and select the column that holds that card." HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" FontSize="20" Width="529" HorizontalContentAlignment="Center" Visibility="Hidden"/>
 
