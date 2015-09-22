@@ -9,47 +9,53 @@ namespace CS3750CardTrick
 {
     class Dealer
     {
-        private int DealNumber; // needs to be dealt and selected at least 3 times. 
-                                // - source Eric's wife.
+        private int DealNumber; // needs to be dealt and selected at least 3 times.  - source Eric's wife.
 
         public static Deck deck = new Deck(); // just want the top 21 cards to work with
         public static List<Card> deck21 = new List<Card>(21);
-        //deck21 = Deck.getDeck21();
+
+        Column column1;
+        Column column2;
+        Column column3;
+
 
         public Dealer(){
+            column1 = new Column();
+            column2 = new Column();
+            column3 = new Column();
 
-            MainWindow window = new MainWindow();
-            window.lblTest.Content = "dealer init";
-            window.Show();
+            column1.id = 1;
+            column2.id = 2;
+            column3.id = 3;
 
-            //window.imgTest.Source = deck21[0].getFace();
-            
-            //window.imgTest.Source = (System.Windows.Media.ImageSource)(deck21[0].getFace());
+            deck21 = deck.getDeck21();
 
-            BitmapImage image = new BitmapImage(new Uri("C:\\Users\\Erzee\\Source\\Repos\\CS3750CardTrick\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_spades.png", UriKind.Absolute));
-            window.imgTest.Source = image;
-
-
-            Dealer.deck21 = Dealer.deck.getDeck21();
-            for (int i = 0; i < 21; i++)
-            {
-                Console.WriteLine(deck21[i].getFace());
-            }
-
+            DealNumber = 0;
         }
-
-        public void test()
-        {
-
-
-        }
-
-
-        
+      
 
         public void Deal()
         {
             // arranges cards on board into columns
+            for (int i = 0; i < 21; i++)
+            {
+                if (i % 3 == 0) // add cards to the right columns.
+                {
+                    column1.addCard(deck21[i]);
+                } else if (i % 3 == 1 ) 
+                {
+                    column2.addCard(deck21[i]);
+                }
+                else if (i % 3 == 2)
+                {
+                    column3.addCard(deck21[i]);
+                }
+
+            }
+
+            DealNumber++;
+
+            // after cards have been dealt, send the columns over to the board
 
         }
 
@@ -57,14 +63,65 @@ namespace CS3750CardTrick
         {
             // after DealNumber is at least 3
             // selected card is the 11th
+            // need to display deck21[10]
 
         }
 
-        public void PickupCards()
+        public void PickupCards(int indicatedColumn)
         {
             // after Player IndicateColumn()
             // indicated column needs to be picked up 2nd.
-            // Deal() should be called from here
+            
+            deck21.Clear();
+
+            if (indicatedColumn == 1)
+            {
+                for (int i=0; i<7; i++){
+                    deck21.Add(column2.getCardList()[i]);                
+                }
+                for (int i = 0; i < 7; i++)
+                {
+                    deck21.Add(column1.getCardList()[i]);
+                }
+                for (int i = 0; i < 7; i++)
+                {
+                    deck21.Add(column3.getCardList()[i]);
+                }
+            }
+
+            if (indicatedColumn == 2)
+            {
+                for (int i = 0; i < 7; i++)
+                {
+                    deck21.Add(column1.getCardList()[i]);
+                }
+                for (int i = 0; i < 7; i++)
+                {
+                    deck21.Add(column2.getCardList()[i]);
+                }
+                for (int i = 0; i < 7; i++)
+                {
+                    deck21.Add(column3.getCardList()[i]);
+                }
+            }
+
+            if (indicatedColumn == 3)
+            {
+                for (int i = 0; i < 7; i++)
+                {
+                    deck21.Add(column2.getCardList()[i]);
+                }
+                for (int i = 0; i < 7; i++)
+                {
+                    deck21.Add(column3.getCardList()[i]);
+                }
+                for (int i = 0; i < 7; i++)
+                {
+                    deck21.Add(column1.getCardList()[i]);
+                }
+            }
+            // now deal the cards again
+            Deal();
         }
 
 

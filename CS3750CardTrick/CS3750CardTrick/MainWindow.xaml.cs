@@ -26,20 +26,8 @@ namespace CS3750CardTrick
             InitializeComponent();
         }
 
-        private void btnColumn1_Click(object sender, RoutedEventArgs e)
-        {
-            
-            lblTest.Content = "test";
-            
-            // this will work
-            //BitmapImage image = new BitmapImage(new Uri("C:\\Users\\Erzee\\Source\\Repos\\CS3750CardTrick\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_clubs.png", UriKind.Absolute));
-            // imgTest.Source = image;
 
-            // this doesn't work. tried lots of combinations
-            BitmapImage image2 = new BitmapImage(new Uri("\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_hearts.png", UriKind.Relative));
-            imgTest.Source = image2;
 
-        }
 
     }
 }

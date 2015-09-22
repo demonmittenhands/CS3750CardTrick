@@ -8,13 +8,20 @@ namespace CS3750CardTrick
 {
     class Column
     {
+
         public int id { get; set; }
 
         private  List<Card> cardList = new List<Card>();
 
+
         public void addCard(Card card)
         {
             cardList.Add(card);
+        }
+
+        public List<Card> getCardList()
+        {
+            return cardList;
         }
     }
 }
