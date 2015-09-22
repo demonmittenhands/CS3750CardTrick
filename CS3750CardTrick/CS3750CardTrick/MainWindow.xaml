@@ -15,6 +15,9 @@
         <Image x:Name="imgTest" HorizontalAlignment="Left" Height="175" Margin="352,135,0,0" VerticalAlignment="Top" Width="140"/>
         <Button x:Name="btnStartGame" Content="Start Game" HorizontalAlignment="Left" Margin="238,183,0,0" VerticalAlignment="Top" Width="75" Click="btnStartGame_Click"/>
         <Label x:Name="lblGameInfo" Content="Pick a card and select the column that holds that card." HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" FontSize="20" Width="529" HorizontalContentAlignment="Center" Visibility="Hidden"/>
+        <Grid x:Name="grdCardGrid" HorizontalAlignment="Left" Height="299" Margin="105,118,0,0" VerticalAlignment="Top" Width="334">
+            <Image x:Name="imgTest1" HorizontalAlignment="Left" Height="100" Margin="35,39,0,0" VerticalAlignment="Top" Width="100"/>
+        </Grid>
 
     </Grid>
 </Window>

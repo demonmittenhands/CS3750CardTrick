@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Controls;
 
 namespace CS3750CardTrick
 {
@@ -25,6 +27,29 @@ namespace CS3750CardTrick
         public Dealer()
         {
            deck21 = deck.getDeck21();
+
+
+        }
+
+        public void test()
+        {
+
+            MainWindow window = App.Current.Windows.OfType<MainWindow>().SingleOrDefault(x => x.IsActive);
+
+            ImageSourceConverter imgs = new ImageSourceConverter();
+            window.imgTest1.SetValue(Image.SourceProperty, imgs.ConvertFromString(@"Deck/2_of_clubs.png"));
+            
+            window.lblTest.Content = "balogna";
+
+            Image thisimg = new Image();
+            thisimg.Source = imgs.ConvertFromString(@"Deck/3_of_hearts.png") as ImageSource;
+            window.grdCardGrid.Children.Add(thisimg);
+            
+        }
+
+        public void ShowCards()
+        {
+
 
         }
  

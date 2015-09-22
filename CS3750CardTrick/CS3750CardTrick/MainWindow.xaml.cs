@@ -38,8 +38,10 @@ namespace CS3750CardTrick
             //imgTest.Source = image;
 
             // this doesn't work. tried lots of combinations
-            BitmapImage image2 = new BitmapImage(new Uri("\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_hearts.png", UriKind.Relative));
-            imgTest.Source = image2;
+            //BitmapImage image2 = new BitmapImage(new Uri("\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_hearts.png"));
+            //BitmapImage image2 = new BitmapImage(new Uri("pack://application:,,,/CS3750CardTrick;component/Deck/10_of_clubs.png"));
+            //
+            //imgTest.Source = image2;
 
         }
 
@@ -57,6 +59,8 @@ namespace CS3750CardTrick
             btnStartGame.Visibility = Visibility.Hidden;
 
             //fill the card images.
+            Dealer dealer = new Dealer();
+            dealer.test();
             
 
         }
