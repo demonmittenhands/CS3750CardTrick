@@ -41,14 +41,46 @@ namespace CS3750CardTrick
             
             window.lblTest.Content = "balogna";
 
-            Image thisimg = new Image();
-            thisimg.Source = imgs.ConvertFromString(@"Deck/3_of_hearts.png") as ImageSource;
-            window.grdCardGrid.Children.Add(thisimg);
-            
+            //Image thisimg = new Image();
+            //thisimg.Source = imgs.ConvertFromString(@"Deck/3_of_hearts.png") as ImageSource;
+            //window.grdCardGrid.Children.Add(thisimg);
+
+            Deal();
+
+           ShowCards(board);
         }
 
-        public void ShowCards()
+        public void ShowCards(Board board)
         {
+            string imgSource;
+            List<Card> cardList = new List<Card>();
+            ImageSourceConverter imgs = new ImageSourceConverter();
+            MainWindow window = App.Current.Windows.OfType<MainWindow>().SingleOrDefault(x => x.IsActive);
+            Column columnTemp;
+            List<Card> cardListTemp;
+
+            //Image img = new Image();
+
+            for (int i = 0; i < 3; i++)
+            {
+                columnTemp = board.getColumn(i);
+                for (int j = 0; j < 7; j++)
+                {
+
+                    RectangleGeometry rect = new RectangleGeometry(new System.Windows.Rect(new System.Windows.Size(363, 250)));
+                    Image img = new Image();
+                    //img.RenderSize = ;
+
+                    img.Height = 120;
+                    img.Width = 75;
+                    img.Stretch = Stretch.Fill;
+                    cardListTemp = columnTemp.getCardList();
+                    imgSource = "" + cardListTemp[j].getFace();
+                    img.Source = imgs.ConvertFromString(@imgSource) as ImageSource;
+                    Grid.SetColumn(img, i);
+                    window.grdCardGrid.Children.Add(img);
+                }
+            }
 
 
         }
@@ -57,14 +89,10 @@ namespace CS3750CardTrick
         public void Deal()
         {
             // arranges cards on board into columns
-            int i = 0;
-            foreach (var card in deck21)
+            for (int i=0; i<21; i++)
             {
-                if (i <= 3)
-                {
-                    i = 0;
-                }
-                board.addToColumn(i, card);
+               
+               board.addToColumn(i%3, deck21[i]);
             }
         }
 
