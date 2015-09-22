@@ -10,9 +10,26 @@ namespace CS3750CardTrick
     {
         private int id;
 
-        public static void addCard(Card card)
-        {
+        private  List<Card> cardList = new List<Card>();
 
+        public Column(int id)
+        {
+            this.id = id;
+        }
+
+        public int getId()
+        {
+            return id;
+        }
+
+        public List<Card> getCardList()
+        {
+            return cardList;
+        }
+
+        public void addCard(Card card)
+        {
+            cardList.Add(card);
         }
     }
 }

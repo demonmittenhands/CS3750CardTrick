@@ -20,22 +20,26 @@ namespace CS3750CardTrick
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
-        {
+        {       
             InitializeComponent();
         }
 
-        /// <summary>
-        /// This is just a testing button  delete it later.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnTestButton_Click(object sender, RoutedEventArgs e)
+        private void btnColumn1_Click(object sender, RoutedEventArgs e)
         {
-            Player thePlayer = new Player();
-            thePlayer.hasPickCard = true;
-            btnTestButton.Content = thePlayer.hasPickCard;
             
+            lblTest.Content = "test";
+            
+            // this will work
+            //BitmapImage image = new BitmapImage(new Uri("C:\\Users\\Erzee\\Source\\Repos\\CS3750CardTrick\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_clubs.png", UriKind.Absolute));
+            // imgTest.Source = image;
+
+            // this doesn't work. tried lots of combinations
+            BitmapImage image2 = new BitmapImage(new Uri("\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_hearts.png", UriKind.Relative));
+            imgTest.Source = image2;
+
         }
+
     }
 }

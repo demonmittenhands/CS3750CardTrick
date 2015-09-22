@@ -8,16 +8,14 @@ namespace CS3750CardTrick
 {
     class Player
     {
-        public bool hasPickCard { get; set; }
 
-        private int IndicateColumn()
+
+        public int IndicateColumn()
         {
+            // Onclick to set column and return the column number.
             return 0;
         }
 
-        private void PickCard()
-        {
 
-        }
     }
 }
