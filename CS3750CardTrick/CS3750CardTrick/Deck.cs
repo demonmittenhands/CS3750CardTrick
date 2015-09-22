@@ -9,12 +9,15 @@ namespace CS3750CardTrick
     class Deck
     {
         public List<Card> deck;
+        public List<Card> deck21; // the 21 cards used for the trick
 
         public Deck()
         {
             deck = new List<Card>(52);
             createDeck();
             shuffle();
+            random21(); // only use 21 cards for trick
+            
         }
 
         private void createDeck()
@@ -167,5 +170,21 @@ namespace CS3750CardTrick
                 return dealCard;
             }
         }
+
+        public void random21(){
+            deck21 = new List<Card>(21);
+            for (int i = 0; i < 21; i++)
+            {
+                deck21.Add(deck[0]);
+                deck.RemoveAt(0);
+            }
+        }
+
+        public List<Card> getDeck21()
+        {
+            return deck21;
+
+        }
+
     }
 }
