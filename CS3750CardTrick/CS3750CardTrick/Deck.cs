@@ -42,19 +42,19 @@ namespace CS3750CardTrick
                 {
                     suit = "clubs.png";
                 }
-                Card ace = new Card  ("@Deck\\ace_of_" + suit);
-                Card two = new Card  ("@Deck\\2_of_" + suit);
-                Card three = new Card("@Deck\\3_of_" + suit);
-                Card four = new Card ("@Deck\\4_of_" + suit);
-                Card five = new Card ("@Deck\\5_of_" + suit);
-                Card six = new Card  ("@Deck\\6_of_" + suit);
-                Card seven = new Card("@Deck\\7_of_" + suit);
-                Card eight = new Card("@Deck\\8_of_" + suit);
-                Card nine = new Card ("@Deck\\9_of_" + suit);
-                Card ten = new Card  ("@Deck\\10_of_" + suit);
-                Card jack = new Card ("@Deck\\jack_of_" + suit);
-                Card king = new Card ("@Deck\\king_of_" + suit);
-                Card queen = new Card("@Deck\\queen_of_" + suit);
+                Card ace = new Card  ("Deck\\ace_of_" + suit);
+                Card two = new Card  ("Deck\\2_of_" + suit);
+                Card three = new Card("Deck\\3_of_" + suit);
+                Card four = new Card ("Deck\\4_of_" + suit);
+                Card five = new Card ("Deck\\5_of_" + suit);
+                Card six = new Card  ("Deck\\6_of_" + suit);
+                Card seven = new Card("Deck\\7_of_" + suit);
+                Card eight = new Card("Deck\\8_of_" + suit);
+                Card nine = new Card ("Deck\\9_of_" + suit);
+                Card ten = new Card  ("Deck\\10_of_" + suit);
+                Card jack = new Card ("Deck\\jack_of_" + suit);
+                Card king = new Card ("Deck\\king_of_" + suit);
+                Card queen = new Card("Deck\\queen_of_" + suit);
                 //Switch statement to build the deck of cards
                 switch (i)
                 {
