@@ -9,34 +9,22 @@ namespace CS3750CardTrick
 {
     class Dealer
     {
-        private int DealNumber = 1; // needs to be dealt and selected at least 3 times. 
-                                // - source Eric's wife.
+        private int DealNumber = 0; // needs to be dealt and selected at least 3 times. 
 
-        public static Deck deck = new Deck(); // just want the top 21 cards to work with
-        public static List<Card> deck21 = new List<Card>(21);
-        //deck21 = Deck.getDeck21();
+        //public static Deck deck = new Deck(); // just want the top 21 cards to work with
+        //public static List<Card> deck21 = new List<Card>(21);
         Board board = new Board();
+
+        Column column0 = new Column(0);
+        Column column1 = new Column(1);
+        Column column2 = new Column(2);
+
+        Deck deck = new Deck();
+        List<Card>deck21 = new List<Card>(21);
 
         public Dealer()
         {
-
-            //MainWindow window = new MainWindow();
-            //window.lblTest.Content = "dealer init";
-            //window.Show();
-
-            ////window.imgTest.Source = deck21[0].getFace();
-            
-            ////window.imgTest.Source = (System.Windows.Media.ImageSource)(deck21[0].getFace());
-
-            //BitmapImage image = new BitmapImage(new Uri("C:\\Users\\Erzee\\Source\\Repos\\CS3750CardTrick\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_spades.png", UriKind.Absolute));
-            //window.imgTest.Source = image;
-
-
-            //Dealer.deck21 = Dealer.deck.getDeck21();
-            //for (int i = 0; i < 21; i++)
-            //{
-            //    Console.WriteLine(deck21[i].getFace());
-            //}
+           deck21 = deck.getDeck21();
 
         }
  
@@ -69,9 +57,9 @@ namespace CS3750CardTrick
             // Deal() should be called from here
             List<Card> deck = new List<Card>();
 
-            Column column0 = board.getColumn(0);
-            Column column1 = board.getColumn(1);
-            Column column2 = board.getColumn(2);
+            column0 = board.getColumn(0);
+            column1 = board.getColumn(1);
+            column2 = board.getColumn(2);
 
             if (columnId == 0)
             {
@@ -93,6 +81,9 @@ namespace CS3750CardTrick
                 addCardsToDeck(column2, deck);
                 addCardsToDeck(column1, deck);
             }
+
+            Deal();
+            DealNumber++;
 
             return deck;
         }
