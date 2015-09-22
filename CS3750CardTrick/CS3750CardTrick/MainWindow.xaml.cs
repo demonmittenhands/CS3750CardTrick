@@ -20,7 +20,9 @@ namespace CS3750CardTrick
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
+        Dealer dealer = new Dealer();
+
         public MainWindow()
         {       
             InitializeComponent();

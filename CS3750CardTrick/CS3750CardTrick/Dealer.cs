@@ -9,7 +9,7 @@ namespace CS3750CardTrick
 {
     class Dealer
     {
-        private int DealNumber; // needs to be dealt and selected at least 3 times. 
+        private int DealNumber = 1; // needs to be dealt and selected at least 3 times. 
                                 // - source Eric's wife.
 
         public static Deck deck = new Deck(); // just want the top 21 cards to work with
