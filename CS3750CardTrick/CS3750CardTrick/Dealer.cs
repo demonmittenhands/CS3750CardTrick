@@ -17,25 +17,26 @@ namespace CS3750CardTrick
         //deck21 = Deck.getDeck21();
         Board board = new Board();
 
-        public Dealer(){
+        public Dealer()
+        {
 
-            MainWindow window = new MainWindow();
-            window.lblTest.Content = "dealer init";
-            window.Show();
+            //MainWindow window = new MainWindow();
+            //window.lblTest.Content = "dealer init";
+            //window.Show();
 
-            //window.imgTest.Source = deck21[0].getFace();
+            ////window.imgTest.Source = deck21[0].getFace();
             
-            //window.imgTest.Source = (System.Windows.Media.ImageSource)(deck21[0].getFace());
+            ////window.imgTest.Source = (System.Windows.Media.ImageSource)(deck21[0].getFace());
 
-            BitmapImage image = new BitmapImage(new Uri("C:\\Users\\Erzee\\Source\\Repos\\CS3750CardTrick\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_spades.png", UriKind.Absolute));
-            window.imgTest.Source = image;
+            //BitmapImage image = new BitmapImage(new Uri("C:\\Users\\Erzee\\Source\\Repos\\CS3750CardTrick\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_spades.png", UriKind.Absolute));
+            //window.imgTest.Source = image;
 
 
-            Dealer.deck21 = Dealer.deck.getDeck21();
-            for (int i = 0; i < 21; i++)
-            {
-                Console.WriteLine(deck21[i].getFace());
-            }
+            //Dealer.deck21 = Dealer.deck.getDeck21();
+            //for (int i = 0; i < 21; i++)
+            //{
+            //    Console.WriteLine(deck21[i].getFace());
+            //}
 
         }
  
