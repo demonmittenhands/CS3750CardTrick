@@ -33,7 +33,7 @@ namespace CS3750CardTrick
             
             // this will work
             //BitmapImage image = new BitmapImage(new Uri("C:\\Users\\Erzee\\Source\\Repos\\CS3750CardTrick\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_clubs.png", UriKind.Absolute));
-            // imgTest.Source = image;
+            //imgTest.Source = image;
 
             // this doesn't work. tried lots of combinations
             BitmapImage image2 = new BitmapImage(new Uri("\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_hearts.png", UriKind.Relative));
@@ -41,5 +41,35 @@ namespace CS3750CardTrick
 
         }
 
-    }
+        private void btnStartGame_Click(object sender, RoutedEventArgs e)
+        {
+
+            // shows the 3 column buttons
+            btnColumn1.Visibility = Visibility.Visible;
+            btnColumn2.Visibility = Visibility.Visible;
+            btnColumn3.Visibility = Visibility.Visible;
+            //shows lblGameInfo
+            lblGameInfo.Visibility = Visibility.Visible;
+
+            // hides start game button.
+            btnStartGame.Visibility = Visibility.Hidden;
+
+            //fill the card images.
+            
+
+        }
+
+    //    private void imgTest_Loaded(object sender, RoutedEventArgs e)
+    //    {
+
+    //        //BitmapImage theImg = new BitmapImage();
+    //        //theImg.BeginInit();
+    //        ////theImg.UriSource = new Uri("Images/2_of_clubs.png");
+    //        //theImg.EndInit();
+
+    //        //var image = sender as Image;
+    //        //imgTest.Source = theImg;
+    //    }
+
+    //}
 }
