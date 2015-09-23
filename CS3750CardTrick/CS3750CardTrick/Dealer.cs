@@ -53,12 +53,9 @@ namespace CS3750CardTrick
 
         public void ShowCards(Deck deck)
         {
-            string imgSource;
             List<Card> cardList = new List<Card>();
             ImageSourceConverter imgs = new ImageSourceConverter();
             MainWindow window = App.Current.Windows.OfType<MainWindow>().SingleOrDefault(x => x.IsActive);
-            Column columnTemp;
-            List<Card> cardListTemp;
 
             //Image img = new Image();
 
@@ -76,27 +73,27 @@ namespace CS3750CardTrick
                 img.Stretch = Stretch.Fill;
                 //img.Source = imgs.ConvertFromString("" + deck21[0].getFace()) as ImageSource;
 
-                window.img1.Source = imgs.ConvertFromString("" +  deck21[0].getFace()) as ImageSource;
-                window.img2.Source = imgs.ConvertFromString("" +  deck21[1].getFace()) as ImageSource;
-                window.img3.Source = imgs.ConvertFromString("" +  deck21[2].getFace()) as ImageSource;
-                window.img4.Source = imgs.ConvertFromString("" +  deck21[3].getFace()) as ImageSource;
-                window.img5.Source = imgs.ConvertFromString("" +  deck21[4].getFace()) as ImageSource;
-                window.img6.Source = imgs.ConvertFromString("" +  deck21[5].getFace()) as ImageSource;
-                window.img7.Source = imgs.ConvertFromString("" +  deck21[6].getFace()) as ImageSource;
-                window.img8.Source = imgs.ConvertFromString("" +  deck21[7].getFace()) as ImageSource;
-                window.img9.Source = imgs.ConvertFromString("" +  deck21[8].getFace()) as ImageSource;
-                window.img10.Source = imgs.ConvertFromString("" + deck21[9].getFace()) as ImageSource;
-                window.img11.Source = imgs.ConvertFromString("" + deck21[10].getFace()) as ImageSource;
-                window.img12.Source = imgs.ConvertFromString("" + deck21[11].getFace()) as ImageSource;
-                window.img13.Source = imgs.ConvertFromString("" + deck21[12].getFace()) as ImageSource;
-                window.img14.Source = imgs.ConvertFromString("" + deck21[13].getFace()) as ImageSource;
-                window.img15.Source = imgs.ConvertFromString("" + deck21[14].getFace()) as ImageSource;
-                window.img16.Source = imgs.ConvertFromString("" + deck21[15].getFace()) as ImageSource;
-                window.img17.Source = imgs.ConvertFromString("" + deck21[16].getFace()) as ImageSource;
-                window.img18.Source = imgs.ConvertFromString("" + deck21[17].getFace()) as ImageSource;
-                window.img19.Source = imgs.ConvertFromString("" + deck21[18].getFace()) as ImageSource;
-                window.img20.Source = imgs.ConvertFromString("" + deck21[19].getFace()) as ImageSource;
-                window.img21.Source = imgs.ConvertFromString("" + deck21[20].getFace()) as ImageSource;
+                window.img1.Source = imgs.ConvertFromString("..\\..\\" +  deck21[0].getFace()) as ImageSource;
+                window.img2.Source = imgs.ConvertFromString("..\\..\\" + deck21[1].getFace()) as ImageSource;
+                window.img3.Source = imgs.ConvertFromString("..\\..\\" + deck21[2].getFace()) as ImageSource;
+                window.img4.Source = imgs.ConvertFromString("..\\..\\" + deck21[3].getFace()) as ImageSource;
+                window.img5.Source = imgs.ConvertFromString("..\\..\\" + deck21[4].getFace()) as ImageSource;
+                window.img6.Source = imgs.ConvertFromString("..\\..\\" + deck21[5].getFace()) as ImageSource;
+                window.img7.Source = imgs.ConvertFromString("..\\..\\" + deck21[6].getFace()) as ImageSource;
+                window.img8.Source = imgs.ConvertFromString("..\\..\\" + deck21[7].getFace()) as ImageSource;
+                window.img9.Source = imgs.ConvertFromString("..\\..\\" + deck21[8].getFace()) as ImageSource;
+                window.img10.Source = imgs.ConvertFromString("..\\..\\" + deck21[9].getFace()) as ImageSource;
+                window.img11.Source = imgs.ConvertFromString("..\\..\\" + deck21[10].getFace()) as ImageSource;
+                window.img12.Source = imgs.ConvertFromString("..\\..\\" + deck21[11].getFace()) as ImageSource;
+                window.img13.Source = imgs.ConvertFromString("..\\..\\" + deck21[12].getFace()) as ImageSource;
+                window.img14.Source = imgs.ConvertFromString("..\\..\\" + deck21[13].getFace()) as ImageSource;
+                window.img15.Source = imgs.ConvertFromString("..\\..\\" + deck21[14].getFace()) as ImageSource;
+                window.img16.Source = imgs.ConvertFromString("..\\..\\" + deck21[15].getFace()) as ImageSource;
+                window.img17.Source = imgs.ConvertFromString("..\\..\\" + deck21[16].getFace()) as ImageSource;
+                window.img18.Source = imgs.ConvertFromString("..\\..\\" + deck21[17].getFace()) as ImageSource;
+                window.img19.Source = imgs.ConvertFromString("..\\..\\" + deck21[18].getFace()) as ImageSource;
+                window.img20.Source = imgs.ConvertFromString("..\\..\\" + deck21[19].getFace()) as ImageSource;
+                window.img21.Source = imgs.ConvertFromString("..\\..\\" + deck21[20].getFace()) as ImageSource;
                                                                          
 
 
