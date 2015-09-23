@@ -22,11 +22,6 @@ namespace CS3750CardTrick
             cardList.Clear();
         }
 
-        public int getId()
-        {
-            return id;
-        }
-
         public List<Card> getCardList()
         {
             return cardList;

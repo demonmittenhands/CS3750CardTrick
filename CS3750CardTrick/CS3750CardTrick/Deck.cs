@@ -152,24 +152,6 @@ namespace CS3750CardTrick
                 deck[randomNum] = temp;
             }
         }
-        public Card dealCard()
-        {
-            Card dealCard;
-            if (deck.Count() > 0)
-            {
-                dealCard = deck[0];
-                deck.RemoveAt(0);
-                return dealCard;
-            }
-            else
-            {
-                createDeck();
-                shuffle();
-                dealCard = deck[0];
-                deck.RemoveAt(0);
-                return dealCard;
-            }
-        }
 
         public void random21(){
             deck21 = new List<Card>(21);
