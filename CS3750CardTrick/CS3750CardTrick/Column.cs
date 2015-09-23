@@ -17,6 +17,11 @@ namespace CS3750CardTrick
             this.id = id;
         }
 
+        public void clearList()
+        {
+            cardList.Clear();
+        }
+
         public int getId()
         {
             return id;

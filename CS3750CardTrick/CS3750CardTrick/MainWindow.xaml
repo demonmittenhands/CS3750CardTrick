@@ -9,8 +9,8 @@
     <Grid>
         <Label x:Name="lblTitle" Margin="0,10,0,0" VerticalAlignment="Top" Height="36" Content="21 Card Game" HorizontalContentAlignment="Center" FontSize="22"/>
         <Button x:Name="btnColumn1" Content="Column 1" HorizontalAlignment="Left" Margin="152,495,0,0" VerticalAlignment="Top" Width="75" Click="btnColumn1_Click"/>
-        <Button x:Name="btnColumn2" Content="Column 2" HorizontalAlignment="Left" Margin="313,495,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btnColumn3" Content="Column 3" HorizontalAlignment="Left" Margin="477,495,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.449,0.734"/>
+        <Button x:Name="btnColumn2" Content="Column 2" HorizontalAlignment="Left" Margin="313,495,0,0" VerticalAlignment="Top" Width="75" Click="btnColumn2_Click"/>
+        <Button x:Name="btnColumn3" Content="Column 3" HorizontalAlignment="Left" Margin="477,495,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.449,0.734" Click="btnColumn3_Click"/>
         <Button x:Name="btnStartGame" Content="Start Game" HorizontalAlignment="Left" Margin="313,76,0,0" VerticalAlignment="Top" Width="75" Click="btnStartGame_Click" RenderTransformOrigin="1.171,-1.694"/>
         <Label x:Name="lblGameInfo" Content="Pick a card and select the column that holds that card." HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" FontSize="20" Width="670" HorizontalContentAlignment="Center"/>
 
@@ -35,6 +35,7 @@
         <Image x:Name="img19"  HorizontalAlignment="Left" Height="100" Margin="152,347,0,0" VerticalAlignment="Top" Width="100" Source="Deck/4_of_spades.png"/>
         <Image x:Name="img20"  HorizontalAlignment="Left" Height="100" Margin="313,347,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
         <Image x:Name="img21"  HorizontalAlignment="Left" Height="100" Margin="477,347,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.548,0.488" Source="Deck/4_of_spades.png"/>
+        <Image x:Name="imgTheCard" HorizontalAlignment="Left" Height="306" Margin="243,118,0,0" VerticalAlignment="Top" Width="282" Source="Deck/4_of_spades.png"/>
 
     </Grid>
 </Window>

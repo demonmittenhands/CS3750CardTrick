@@ -41,8 +41,8 @@ namespace CS3750CardTrick
         private void btnColumn1_Click(object sender, RoutedEventArgs e)
         {
             dealer.PickupCards(0);
-
             dealer.ShowCards();
+            checkForCard();
             
             
 
@@ -69,6 +69,28 @@ namespace CS3750CardTrick
             dealer.ShowCards();
             
 
+        }
+
+        private void btnColumn2_Click(object sender, RoutedEventArgs e)
+        {
+            dealer.PickupCards(1);
+            dealer.ShowCards();
+            checkForCard();
+        }
+
+        private void btnColumn3_Click(object sender, RoutedEventArgs e)
+        {
+            dealer.PickupCards(2);
+            dealer.ShowCards();
+            checkForCard();
+        }
+
+        private void checkForCard()
+        {
+            if (Dealer.dealNumber == 3)
+            {
+                dealer.RevealCard();
+            }
         }
 
 
