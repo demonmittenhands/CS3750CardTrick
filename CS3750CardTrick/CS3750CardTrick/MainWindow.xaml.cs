@@ -26,20 +26,25 @@ namespace CS3750CardTrick
         public MainWindow()
         {       
             InitializeComponent();
+
+            btnColumn1.Visibility = Visibility.Hidden;
+            btnColumn2.Visibility = Visibility.Hidden;
+            btnColumn3.Visibility = Visibility.Hidden;
+
+            lblGameInfo.Visibility = Visibility.Hidden;
+
+
         }
+
+        
 
         private void btnColumn1_Click(object sender, RoutedEventArgs e)
         {
+            dealer.PickupCards(0);
+            dealer.ShowCards();
+            checkForCard();
             
-            lblTest.Content = "test";
             
-            // this will work
-            //BitmapImage image = new BitmapImage(new Uri("C:\\Users\\Erzee\\Source\\Repos\\CS3750CardTrick\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_clubs.png", UriKind.Absolute));
-            //imgTest.Source = image;
-
-            // this doesn't work. tried lots of combinations
-            BitmapImage image2 = new BitmapImage(new Uri("\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_hearts.png", UriKind.Relative));
-            imgTest.Source = image2;
 
         }
 
@@ -57,21 +62,37 @@ namespace CS3750CardTrick
             btnStartGame.Visibility = Visibility.Hidden;
 
             //fill the card images.
+            //Dealer dealer = new Dealer();
+
+            //dealer.test();
+            dealer.Deal();
+            dealer.ShowCards();
             
 
         }
 
-    //    private void imgTest_Loaded(object sender, RoutedEventArgs e)
-    //    {
+        private void btnColumn2_Click(object sender, RoutedEventArgs e)
+        {
+            dealer.PickupCards(1);
+            dealer.ShowCards();
+            checkForCard();
+        }
 
-    //        //BitmapImage theImg = new BitmapImage();
-    //        //theImg.BeginInit();
-    //        ////theImg.UriSource = new Uri("Images/2_of_clubs.png");
-    //        //theImg.EndInit();
+        private void btnColumn3_Click(object sender, RoutedEventArgs e)
+        {
+            dealer.PickupCards(2);
+            dealer.ShowCards();
+            checkForCard();
+        }
 
-    //        //var image = sender as Image;
-    //        //imgTest.Source = theImg;
-    //    }
+        private void checkForCard()
+        {
+            if (Dealer.dealNumber == 3)
+            {
+                dealer.RevealCard();
+            }
+        }
+
 
     }
 }
