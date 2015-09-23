@@ -40,17 +40,11 @@ namespace CS3750CardTrick
 
         private void btnColumn1_Click(object sender, RoutedEventArgs e)
         {
-            
-            
-            // this will work
-            //BitmapImage image = new BitmapImage(new Uri("C:\\Users\\Erzee\\Source\\Repos\\CS3750CardTrick\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_clubs.png", UriKind.Absolute));
-            //imgTest.Source = image;
+            dealer.PickupCards(0);
 
-            // this doesn't work. tried lots of combinations
-            //BitmapImage image2 = new BitmapImage(new Uri("\\CS3750CardTrick\\CS3750CardTrick\\Deck\\10_of_hearts.png"));
-            //BitmapImage image2 = new BitmapImage(new Uri("pack://application:,,,/CS3750CardTrick;component/Deck/10_of_clubs.png"));
-            //
-            //imgTest.Source = image2;
+            dealer.ShowCards();
+            
+            
 
         }
 
@@ -68,24 +62,15 @@ namespace CS3750CardTrick
             btnStartGame.Visibility = Visibility.Hidden;
 
             //fill the card images.
-            Dealer dealer = new Dealer();
+            //Dealer dealer = new Dealer();
 
-            dealer.test();
+            //dealer.test();
+            dealer.Deal();
+            dealer.ShowCards();
             
 
         }
 
-    //    private void imgTest_Loaded(object sender, RoutedEventArgs e)
-    //    {
-
-    //        //BitmapImage theImg = new BitmapImage();
-    //        //theImg.BeginInit();
-    //        ////theImg.UriSource = new Uri("Images/2_of_clubs.png");
-    //        //theImg.EndInit();
-
-    //        //var image = sender as Image;
-    //        //imgTest.Source = theImg;
-    //    }
 
     }
 }

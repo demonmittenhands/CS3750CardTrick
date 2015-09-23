@@ -48,10 +48,10 @@ namespace CS3750CardTrick
 
             Deal();
 
-           ShowCards(deck);
+           //ShowCards(deck);// testing
         }
 
-        public void ShowCards(Deck deck)
+        public void ShowCards() //Testing taking out args Deck deck
         {
             string imgSource;
             List<Card> cardList = new List<Card>();
@@ -172,7 +172,7 @@ namespace CS3750CardTrick
 
         public void addCardsToDeck(Column column, List<Card> deck)
         {
-            foreach (var card in column.getCardList())
+            foreach (Card card in column.getCardList()) ///changed var to Card.
             {
                 deck.Add(card);
             }
