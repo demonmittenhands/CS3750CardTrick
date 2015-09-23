@@ -10,7 +10,7 @@ namespace CS3750CardTrick
     {
         private int id;
 
-        private  List<Card> cardList = new List<Card>();
+        private List<Card> cardList = new List<Card>();
 
         public Column(int id)
         {
